@@ -30,14 +30,14 @@ int main(void)
 
 int countLetters(string s)
 {
-    int words = 0;
+    int letters = 0;
     // Iterate over all chars of text
     for (int i = 0, len = strlen(s); i < len; i++)
     {
         (isupper(s[i])) ? s[i] = tolower(s[i]) : 0; // Transform each super case in lower case to make easy the verification
-        (s[i] >= 'a' && s[i] <= 'z') ? words++ : 0;
+        (s[i] >= 'a' && s[i] <= 'z') ? letters++ : 0;
     }
-    return words;
+    return letters;
 }
 
 int countWords(string s)
